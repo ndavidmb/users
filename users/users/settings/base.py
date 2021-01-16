@@ -29,7 +29,10 @@ DJANGO_APPS = (
     'django.contrib.staticfiles',
 )
 
-LOCAL_APPS = ()
+LOCAL_APPS = (
+    'apps.users',
+    'apps.home',
+)
 
 THIRD_PARTY_APPS = ()
 
@@ -83,8 +86,9 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+AUTH_USER_MODEL = 'users.User'
 
-LANGUAGE_CODE = 'en-mx'
+LANGUAGE_CODE = 'es-mx'
 
 TIME_ZONE = 'UTC'
 

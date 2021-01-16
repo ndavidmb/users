@@ -26,3 +26,10 @@ STATICFILES_DIRS = [BASE_DIR / "../static",]
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / "../media"
+
+# Email settings
+EMAIL_USE_TLS = True
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = get_secret('EMAIL')
+EMAIL_HOST_PASSWORD = get_secret('PASSWORD_EMAIL')
+EMAIL_PORT = 587
